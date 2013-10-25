@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title><%= content_for?(:title) ? yield(:title) + " | Stan Martineau's Portfolio " : "Stan Martineau's Portfolio" %></title>
+    <meta name='description' content="<% content_for?(:description) ? yield(:description) : 'Stan Martineau\'s personal portfolio website' %>" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://use.edgefonts.net/tangerine:n4,n7.js"></script> 
+    <script src="//use.edgefonts.net/kaushan-script.js"></script>
+
+    <script src="assets/js/script.js"></script>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    
+      <%= render 'layouts/navigation' %>   
+      <div class="container"> 
+        <%= render 'layouts/messages' %>
+       <%= yield %>
+      </div>
+      <br/>
+      <br>
+      <br>
+      <p>Install a dope footer here with kittens ninja fighting and shit.  Or monkeys riding giraffes. </p>
+  </body>
+</html>
+
+<html>
+<head>
+  <title>MyPortfolio</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
+

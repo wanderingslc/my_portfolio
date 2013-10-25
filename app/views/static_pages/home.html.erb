@@ -1,0 +1,59 @@
+<% content_for :title, 'Stan Martineau\'s home page' %>
+<% content_for :description, 'Stan Martineau\'s home page about his Ruby on Rails projects Utah' %>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Stan Martineau</h1>
+    <br/>
+
+    <p class="col-md-3 col-md-offset-9">
+      <div id="clock" class="light">
+      <div class="display-clock">
+        <div class="weekdays"></div>
+        <div class="ampm"></div>
+        <div class="alarm"></div>
+        <div class="digits"></div>
+      </div>
+     </div>
+
+     <!-- <div class="button-holder">
+        <a class="button">switch themes</a>
+      </div> -->
+
+    </p>
+  </div>
+</div>
+<br/>
+<br/>
+<br/>
+
+      <div class="row" id="homepage-cols">
+        <div class="col-lg-4 ">
+          <div>
+            <%= image_tag('rails_128.png', class: " img-responsive col-md-offset-4") %>
+          
+            <h2>Ruby on Rails</h2>
+            <p>Why the Ruby on Rails stack? Effecient, Effective, and open source. And the mighty <%= link_to "Ben Eggett", "http://www.beneggett.com/#/step-1" %> teaches it. </p>
+            <p><a class="btn btn-default" href="#">Ruby Projects! &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div>
+            <%= image_tag('HTML5_Badge_128.png', class: "img-responsive col-md-offset-4") %>
+            <h2>Responsive Web Design</h2>
+            <p>What is it? Web pages that automatically scale to fit the device looking them up. No special .mobi extension, no tomfoolery, just clean, simple, sites that make sense from your smart phone to your desktop. </p>
+            <p><a class="btn btn-default" href="http://stan-demosite.businesscatalyst.com/moebius/index.html">Sample Page! &raquo;</a></p>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div>
+            <%= image_tag('JS.png', class: "img-responsive col-md-offset-4") %>
+            <h2>Javascript</h2>
+            <p>Or EMCAscript, pick your poison. From making your mouse sparkly in the dark days of the web to powering HTML5 games now, there's a whole world of possibility with javascript. </p>
+           <p><a class="btn btn-default" href="http://www.scirra.com/demos/space-blaster/default.aspx">A Demo! &raquo;</a></p>
+         </div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+
