@@ -1,11 +1,14 @@
 MyPortfolio::Application.routes.draw do
-  get "static_pages/home"
 
-  get "static_pages/projects"
+  root :to => 'static_pages#home'
 
-  get "static_pages/about"
+  #get "home", to: "static_pages#home", as: :home
 
-  get "static_pages/contact"
+  get "projects", to: "static_pages#projects", as: :projects
+
+  get "about", to: "static_pages#about", as: :about
+
+  get "contact", to: "static_pages#contact", as: :contact
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

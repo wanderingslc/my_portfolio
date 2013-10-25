@@ -77,8 +77,8 @@ $(function(){
       setTimeout(update_time, 1000);
     })();
     //switch the theme
-    $('a.button').click(function(){
-      clock.toggleClass('light dark');
-    });
+    // $('a.button').click(function(){
+    //   clock.toggleClass('light dark');
+    // });
 
 });
