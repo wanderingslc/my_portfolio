@@ -55,6 +55,10 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.0.4)
     callsite (0.0.11)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.3)
+      climate_control (>= 0.0.3, < 1.0)
     coderay (1.0.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -104,6 +108,11 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.2)
     orm_adapter (0.4.0)
+    paperclip (3.5.2)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
     pg (0.17.0)
     polyglot (0.3.3)
     powder (0.2.0)
@@ -188,6 +197,7 @@ DEPENDENCIES
   letter_opener
   meta_request
   minitest-rails!
+  paperclip (~> 3.0)
   pg
   powder
   pry-rails

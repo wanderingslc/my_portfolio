@@ -12,8 +12,9 @@ end
 module MyPortfolio
   class Application < Rails::Application
 
-    congfig.generators do |g|
+    config.generators do |g|
         g.test_framework :mini_test, :spec => true, :fixture => false
+    end
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -61,5 +62,6 @@ module MyPortfolio
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    config.paperclip_defaults = { default_url: "assets/:attachment/default/:style.png" }
   end
 end

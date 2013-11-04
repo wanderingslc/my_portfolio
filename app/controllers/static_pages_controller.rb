@@ -3,6 +3,8 @@ class StaticPagesController < ApplicationController
   #before_filter :authenticate_user!, only: [:about]
 
   def home
+    #@users = Users.includes(:pictures)
+    #adding in whatever we want to come in as eager loading from the database. 
   end
 
   def projects

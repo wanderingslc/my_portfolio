@@ -1,5 +1,17 @@
 MyPortfolio::Application.routes.draw do
 
+  resources :posts
+
+
+  resources :pictures
+
+  # resource :posts
+  #   get '/posts/:post_id/pictures/new', to: 'posts#new_image', as: :new_image
+  #   post '/posts/:post_id/pictures/new', to: 'posts#create_image', as: :create_image
+  # this is for the post method after it's created to tie the pictures into the controller like a boss. 
+
+  devise_for :installs
+
   root :to => 'static_pages#home'
 
   #get "home", to: "static_pages#home", as: :home
@@ -9,6 +21,8 @@ MyPortfolio::Application.routes.draw do
   get "about", to: "static_pages#about", as: :about
 
   get "contact", to: "static_pages#contact", as: :contact
+
+  get "posts", to: "posts#index", as: :index
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
