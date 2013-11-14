@@ -24,6 +24,8 @@ MyPortfolio::Application.routes.draw do
 
   get "posts", to: "posts#index", as: :index
 
+  get "ipsum_generator", to: "static_pages#ipsum_generator", as: :ipsum_generator
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
